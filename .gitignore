@@ -9,6 +9,7 @@ dist
 .DS_Store
 node_modules
 /dist
+site
 
 coverage
 npm-debug.log
