@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "vue-use-typewriter",
+  "workspaces": [
+    "src",
+    "example"
+  ]
+}

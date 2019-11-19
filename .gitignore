@@ -1,0 +1,39 @@
+*.log
+.DS_Store
+node_modules
+.rts2_cache_cjs
+.rts2_cache_esm
+.rts2_cache_umd
+dist
+.history
+.DS_Store
+node_modules
+/dist
+
+coverage
+npm-debug.log
+yarn-error.log
+.nyc_output
+.checklist.md
+coverage.lcov
+dist
+package-lock.json
+.DS_Store
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
