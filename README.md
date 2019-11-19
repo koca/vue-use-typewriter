@@ -1,23 +1,46 @@
-# test
+# Vue Typewriter Hook
 
-This project was bootstrapped with [TSDX](https://github.com/jaredpalmer/tsdx).
+![](./example/public/vue-usetypewriter2.gif)
 
-## Local Development
+Made for Vue 3 but it's not available yet. So you can use 
+Vue version 2.* with [@vue/composition-api](https://github.com/vuejs/composition-api) 
 
-Below is a list of commands you will probably find useful.
+## Installation
 
-### `npm start` or `yarn start`
+Install using [Yarn](https://yarnpkg.com):
 
-Runs the project in development/watch mode. Your project will be rebuilt upon changes. TSDX has a special logger for you convenience. Error messages are pretty printed and formatted for compatibility VS Code's Problems tab.
+```sh
+yarn add vue-use-typewriter
+```
 
-Your library will be rebuilt if you make edits.
+or NPM:
 
-### `yarn build`
+```sh
+npm install vue-use-typewriter --save
+```
 
-Bundles the package to the `dist` folder.
-The package is optimized and bundled with Rollup into multiple formats (CommonJS, UMD, and ES Module).
+## Usage
 
-### `yarn test`
+### Basic
 
-Runs the test watcher (Jest) in an interactive mode.
-By default, runs tests related to files changed since the last commit.
+```html
+todo: add example
+```
+
+## API
+
+### Options
+
+| Name       | Type     | Default | Required | Description                                    |
+| ---------- | -------- | ------- | -------- | ---------------------------------------------- |
+| words      | string[] | []      | Yes      | An array of words you want to be typed.        |
+| min        | number   | 10      | No       | Minimum amount in ms of delay between letters. |
+| max        | number   | 80      | No       | Maximum amount in ms of delay between letters. |
+| wordDelay  | number   | 2000    | No       | Delay in ms between words in the array.        |
+| eraseDelay | number   | 1000    | No       | Delay in ms before earsing the word            |
+
+React version: [react-use-typewriter](https://github.com/gielcobben/use-typewriter).
+
+## License
+
+**use-typewriter** is MIT licensed.
