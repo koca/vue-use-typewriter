@@ -24,8 +24,39 @@ npm install vue-use-typewriter --save
 ### Basic
 
 ```html
-todo: add example
+<template>
+  <div id="app">
+    <div>{{ word }}</div>
+  </div>
+</template>
+
+<script>
+import { ref, createComponent, reactive, watch, toRefs } from '@vue/composition-api';
+import { useTypewriter } from 'vue-use-typewriter';
+
+export default createComponent({
+  setup() {
+    let options = {
+      words: ['Hello', 'World', 'This is', 'a hook'],
+      min: 10,
+      max: 80,
+      wordDelay: 2000,
+      eraseDelay: 1000,
+    };
+    let { word } = useTypewriter(options);
+    //state
+    return {
+      word
+    };
+  }
+});
+</script>
 ```
+
+### Advanced usage
+
+checkout the example folder for reactive options and animations.
+
 
 ## API
 
