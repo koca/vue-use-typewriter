@@ -12,7 +12,11 @@ const cwd = process.cwd();
 // eslint-disable-next-line
 const pkg = require(path.join(cwd, 'package.json'))
 
-rimraf.sync(path.join(cwd, './dist'));
+rimraf.sync(path.join(cwd, '../dist'));
+
+const setDistFolder = filePathInPackageJson => {
+  return path.join('../', filePathInPackageJson);
+};
 
 const banner = `/*!
   * ${pkg.name} v${pkg.version}
@@ -63,12 +67,12 @@ function createEntry(
   };
 
   if (format === 'iife') {
-    config.output.file = pkg.unpkg;
+    config.output.file = setDistFolder(pkg.unpkg);
     config.output.name = exportName;
   } else if (format === 'es') {
-    config.output.file = isBrowser ? pkg.browser : pkg.module;
+    config.output.file = isBrowser ? setDistFolder(pkg.browser) : setDistFolder(pkg.module);
   } else if (format === 'cjs') {
-    config.output.file = pkg.main;
+    config.output.file = setDistFolder(pkg.main);
   }
 
   if (!external) {

@@ -2,6 +2,7 @@
   "private": true,
   "name": "vue-use-typewriter",
   "scripts": {
+    "build": "yarn workspace vue-use-typewriter build",
     "build:site": "yarn workspace example run build"
   },
   "workspaces": [
