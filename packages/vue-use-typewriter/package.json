@@ -1,0 +1,15 @@
+{
+  "name": "vue-use-typewriter",
+  "version": "0.1.0",
+  "files": [
+    "dist"
+  ],
+  "scripts": {},
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@preconstruct/cli": "^2.1.2",
+    "vue": "^3.0.0"
+  }
+}
