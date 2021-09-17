@@ -13,6 +13,8 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
+    - name: Use Yarn v3
+      run: yarn set version 3.x
     - name: Get Yarn cache path
       id: yarn-cache
       run: echo "::set-output name=dir::$(yarn cache dir)"
