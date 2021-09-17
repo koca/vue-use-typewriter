@@ -20,6 +20,7 @@ coverage.lcov
 dist
 package-lock.json
 .DS_Store
+.yarn
 
 # local env files
 .env.local

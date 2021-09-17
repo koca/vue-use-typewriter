@@ -2,8 +2,7 @@
 
 ![](./example/public/vue-usetypewriter2.gif)
 
-Made for Vue 3 but it's not available yet. So you can use 
-Vue version 2.* with [@vue/composition-api](https://github.com/vuejs/composition-api) 
+Made for Vue 3.
 
 ## Installation
 
@@ -31,19 +30,18 @@ npm install vue-use-typewriter --save
 </template>
 
 <script>
-import { ref, createComponent, reactive, watch, toRefs } from '@vue/composition-api';
 import { useTypewriter } from 'vue-use-typewriter';
 
-export default createComponent({
+export default defineComponent({
   setup() {
-    let options = {
+    const options = {
       words: ['Hello', 'World', 'This is', 'a hook'],
       min: 10,
       max: 80,
       wordDelay: 2000,
       eraseDelay: 1000,
     };
-    let { word } = useTypewriter(options);
+    const { word } = useTypewriter(options);
     //state
     return {
       word
