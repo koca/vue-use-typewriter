@@ -3,7 +3,7 @@
   "changelog": ["@changesets/changelog-github", {"repo": "koca/vue-use-typewriter"}],
   "commit": false,
   "linked": [],
-  "access": "restricted",
+  "access": "public",
   "baseBranch": "master",
   "updateInternalDependencies": "patch",
   "ignore": []
