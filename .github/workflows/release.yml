@@ -13,12 +13,6 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
-    - name: Use Yarn v3
-      run: yarn set version 3.x
-    - name: Get Yarn cache path
-      id: yarn-cache
-      run: echo "::set-output name=dir::$(yarn cache dir)"
-
     - name: Checkout Repo
       uses: actions/checkout@master
       with:
@@ -31,15 +25,8 @@ jobs:
       with:
         node-version: 14
 
-    - name: Load Yarn cache
-      uses: actions/cache@v2
-      with:
-        path: ${{ steps.yarn-cache.outputs.dir }}
-        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-yarn-
     - name: Install dependencies
-      run: yarn install --frozen-lockfile && yarn bootstrap
+      run: yarn
 
 
     - name: Linting
