@@ -1,6 +1,6 @@
 {
   "name": "vue-use-typewriter",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "bundle": "rimraf dist && tsup src/*.ts --dts --external vue --format esm,cjs --target es6",
     "build": "yarn bundle",
