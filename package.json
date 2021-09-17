@@ -10,13 +10,14 @@
     "packages/*"
   ],
   "scripts": {
+    "example": "yarn workspace example dev",
+    "dev": "yarn workspace vue-use-typewriter dev",
     "build": "yarn workspace vue-use-typewriter build",
     "build:site": "yarn workspace example run build",
     "lint": "npm run lint:script",
     "lint:script": "eslint . --ext .js,.jsx,.ts,.tsx,.vue",
     "prepare": "husky install"
   },
-
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
