@@ -16,7 +16,7 @@
     "build:site": "yarn workspace example run build",
     "lint": "npm run lint:script",
     "lint:script": "eslint . --ext .js,.jsx,.ts,.tsx,.vue",
-    "test":"echo ok",
+    "test": "echo okay",
     "prepare": "husky install",
     "release": "changeset publish"
   },

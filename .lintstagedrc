@@ -1,4 +1,4 @@
 {
   "*.{js,jsx,ts,tsx,vue}": "eslint --fix ",
-  "*.{css,scss}": "prettier -w -u"
+  "*.{css,scss,json}": "prettier -w -u"
 }

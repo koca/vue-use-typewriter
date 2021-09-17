@@ -2210,7 +2210,7 @@ __metadata:
     vite: ^2.5.4
     vue: ^3.2.6
     vue-tsc: ^0.2.2
-    vue-use-typewriter: ^0.0.0
+    vue-use-typewriter: ^0.1.0
   languageName: unknown
   linkType: soft
 
@@ -5540,7 +5540,7 @@ typescript@^4.3.2:
   languageName: node
   linkType: hard
 
-"vue-use-typewriter@^0.0.0, vue-use-typewriter@workspace:packages/vue-use-typewriter":
+"vue-use-typewriter@^0.1.0, vue-use-typewriter@workspace:packages/vue-use-typewriter":
   version: 0.0.0-use.local
   resolution: "vue-use-typewriter@workspace:packages/vue-use-typewriter"
   dependencies:
