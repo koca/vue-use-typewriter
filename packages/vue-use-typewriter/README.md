@@ -1,6 +1,6 @@
 # Vue Typewriter Hook
 
-![](./example/public/vue-usetypewriter2.gif)
+![](https://raw.githubusercontent.com/koca/vue-use-typewriter/master/other/vue-usetypewriter2.gif)
 
 Made for Vue 3.
 
