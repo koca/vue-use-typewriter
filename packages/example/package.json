@@ -1,6 +1,6 @@
 {
   "name": "example",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "vue": "^3.2.6",
-    "vue-use-typewriter": "^0.0.0"
+    "vue-use-typewriter": "^0.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.6.1",
